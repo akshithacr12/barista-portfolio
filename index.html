@@ -1,80 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barista Portfolio — Image Test</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 24px;
-      background-color: #faf7f2;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #6f4e37;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 16px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .grid a {
-      display: block;
-      border-radius: 10px;
-      overflow: hidden;
-      background: #fff;
-      border: 1px solid #ddd;
-      transition: transform 0.2s ease;
-    }
-
-    .grid a:hover {
-      transform: scale(1.05);
-    }
-
-    .grid img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .note {
-      text-align: center;
-      margin-top: 20px;
-      color: #666;
-      font-size: 14px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barista Portfolio</title>
+  <meta name="description" content="Beginner barista portfolio with latte art photos." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Barista Portfolio — Image Test</h1>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="brand" href="#top">Barista Portfolio</a>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="grid">
-    <a href="images/portfolio/latte-art-heart-01.webp" target="_blank">
-      <img src="images/thumbnails/latte-art-heart-01-thumb.webp" alt="Heart latte art 01" loading="lazy">
-    </a>
-    <a href="images/portfolio/latte-art-heart-02.webp" target="_blank">
-      <img src="images/thumbnails/latte-art-heart-02-thumb.webp" alt="Heart latte art 02" loading="lazy">
-    </a>
-    <a href="images/portfolio/latte-art-rosetta-03.webp" target="_blank">
-      <img src="images/thumbnails/latte-art-rosetta-03-thumb.webp" alt="Rosetta latte art 03" loading="lazy">
-    </a>
-    <a href="images/portfolio/latte-art-swan-04.webp" target="_blank">
-      <img src="images/thumbnails/latte-art-swan-04-thumb.webp" alt="Swan latte art 04" loading="lazy">
-    </a>
-    <a href="images/portfolio/latte-art-tulip-05.webp" target="_blank">
-      <img src="images/thumbnails/latte-art-tulip-05-thumb.webp" alt="Tulip latte art 05" loading="lazy">
-    </a>
-  </div>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Latte Art & Coffee Moments</h1>
+        <p>Beginner barista, learning every day — pours inspired by online tutorials and lots of practice.</p>
+        <a href="#gallery" class="btn">See the Gallery</a>
+      </div>
+    </section>
 
-  <p class="note">Click any thumbnail to open the full-size image in a new tab.</p>
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I’m a coffee lover exploring espresso and milk texturing. This portfolio shows my learning journey —
+        hearts, tulips, and rosettas. Always open to feedback and new techniques!
+      </p>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <a href="images/portfolio/latte-art-heart-01.webp" target="_blank">
+          <img src="images/thumbnails/latte-art-heart-01-thumb.webp" alt="Heart latte art 01" loading="lazy">
+        </a>
+        <a href="images/portfolio/latte-art-heart-02.webp" target="_blank">
+          <img src="images/thumbnails/latte-art-heart-02-thumb.webp" alt="Heart latte art 02" loading="lazy">
+        </a>
+        <a href="images/portfolio/latte-art-rosetta-03.webp" target="_blank">
+          <img src="images/thumbnails/latte-art-rosetta-03-thumb.webp" alt="Rosetta latte art 03" loading="lazy">
+        </a>
+        <a href="images/portfolio/latte-art-swan-04.webp" target="_blank">
+          <img src="images/thumbnails/latte-art-swan-04-thumb.webp" alt="Swan latte art 04" loading="lazy">
+        </a>
+        <a href="images/portfolio/latte-art-tulip-05.webp" target="_blank">
+          <img src="images/thumbnails/latte-art-tulip-05-thumb.webp" alt="Tulip latte art 05" loading="lazy">
+        </a>
+      </div>
+      <p class="hint">Tip: Click any thumbnail to open the full photo in a new tab.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Want to connect or leave feedback?</p>
+      <ul class="contact-list">
+        <li>Email: <a href="dejhfm@gmail.com">your.email@example.com</a></li>
+        <li>Instagram: <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Barista Portfolio
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
